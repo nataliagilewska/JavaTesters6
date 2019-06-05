@@ -9,15 +9,21 @@ public class Main {
         s1.informacja();
         s1.tankuj(4);
         s1.informacja();
+        s1.jedz(1);
+        s1.informacja();
 
         Motor m1 = new Motor ("Yamaha", "Hamaki","LUB8765", "biały", 15000, 2, 4, 70);
         m1.informacja();
         m1.tankuj(1);
         m1.informacja();
+        m1.jedz(100);
+        m1.informacja();
 
         SamochodyDostawcze sd1= new SamochodyDostawcze("Fiat", "Dostawczak", "WAR345", "niebieski", 550000, 10, 4, 15000,3);
         sd1.informacja();
         sd1.tankuj(4);
+        sd1.informacja();
+        sd1.jedz(4);
         sd1.informacja();
     }
 

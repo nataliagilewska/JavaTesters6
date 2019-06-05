@@ -28,6 +28,11 @@ public abstract class Pojazd {
     public void jedz(double ile)
     {
         licznik+=ile;
+        stanZbiornika-=(ile*0.1);
+        if (stanZbiornika<0)
+        {
+            stanZbiornika=0;
+        }
     }
 
     public void tankuj (double ileLac)

@@ -23,4 +23,13 @@ public abstract class Pojazd {
         System.out.println("Numer: "+nrRej+" Kolor: "+kolor+" Cena: "+cena+" Spalanie: "+spalanie+" Stan zbiornika: "+stanZbiornika+" Licznik: "+licznik);
     }
 
+    public void jedz(double ile)
+    {
+        licznik+=ile;
+    }
+
+    public void tankuj (double ileLac)
+    {
+        stanZbiornika+=ileLac;
+    }
 }

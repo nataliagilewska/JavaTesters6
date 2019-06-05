@@ -8,8 +8,10 @@ public abstract class Pojazd {
     protected double stanZbiornika;
     protected double licznik;
 
-    public Pojazd(String nrRej, String kolor, double cena, double spalanie, double stanZbiornika, double licznik)
+    public Pojazd(String marka, String model, String nrRej, String kolor, double cena, double spalanie, double stanZbiornika, double licznik)
     {
+        this.marka=marka;
+        this.model=model;
         this.nrRej=nrRej;
         this.kolor=kolor;
         this.cena=cena;
@@ -18,9 +20,9 @@ public abstract class Pojazd {
         this.licznik=licznik;
     }
 
-    public void info()
+    public String info()
     {
-        System.out.println("Numer: "+nrRej+" Kolor: "+kolor+" Cena: "+cena+" Spalanie: "+spalanie+" Stan zbiornika: "+stanZbiornika+" Licznik: "+licznik);
+        return "Marka: "+marka+" Model: "+model+" Numer: "+nrRej+" Kolor: "+kolor+" Cena: "+cena+" Spalanie: "+spalanie+" Stan zbiornika: "+stanZbiornika+" Licznik: "+licznik;
     }
 
     public void jedz(double ile)
@@ -32,4 +34,9 @@ public abstract class Pojazd {
     {
         stanZbiornika+=ileLac;
     }
+
+
+
+    //(String nrRej, String kolor, double cena, double spalanie, double stanZbiornika, double licznik, int ileDrzwi)
+    //    {
 }

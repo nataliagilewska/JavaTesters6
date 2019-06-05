@@ -1,5 +1,6 @@
 public class Samochod extends Pojazd {
     int ileDrzwi;
+    //int Silnik;
     public Samochod(String marka, String model, String nrRej, String kolor, double cena, double spalanie, double stanZbiornika, double licznik, int ileDrzwi)
     {
         super(marka, model, nrRej, kolor, cena, spalanie, stanZbiornika, licznik);
